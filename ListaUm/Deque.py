@@ -51,3 +51,12 @@ class LinkedList:
             current_node = current_node.next
         
         return "Valor não encontrado na lista"
+    
+class Deque:
+    
+    def __init__ (self):
+        self.lista = LinkedList()
+        self.head = self.lista.head
+        self.tail = None
+    
+    #implementar métodos inserirInicio() inserirFinal() removerInicio() removerFinal()
