@@ -59,4 +59,58 @@ class Deque:
         self.head = self.lista.head
         self.tail = None
     
-    #implementar métodos inserirInicio() inserirFinal() removerInicio() removerFinal()
+    def remover(self, valor):
+        self.lista.remover(valor) #remoção vai apenas chamar o método implementado em LinkedList
+    
+    def inserir_inicio(self, valor):
+        
+        if self.head is None:
+            #caso a lista vazia, head e tail são iguais
+            novo_No = Node(valor)
+            self.head = novo_No
+            self.tail = novo_No
+
+        else:
+            novo_No = Node(valor)
+            novo_No.next = self.head
+            self.head = novo_No
+    
+    def remover_inicio(self):
+        
+        if self.head is None:
+            print("Lista está vazia, não há o que remover!")
+        
+        elif self.head.next is None: #nesse caso, a lista tem apenas um nó
+            self.head = None
+            self.tail = None
+        
+        else:
+            self.head = self.head.next
+    
+    def inserir_final(self, valor):
+        
+        if self.tail is None:
+            novo_No = Node(valor)
+            self.head = novo_No
+            self.tail = novo_No
+        
+        else:
+            self.tail.next = novo_No
+            self.tail = novo_No    
+        
+    def remover_final(self):
+        
+        if self.head is None:
+            print("Lista vazia, não há o que remover!")
+            return
+        
+        else:
+            current = self.head
+            
+            while current.next is not self.tail: #percorre a lista até o penúltimo elemento
+                current = current.next
+            
+            current.next = None
+            print("último elemento removido!")
+            
+        
