@@ -29,9 +29,10 @@ class LinkedList:
     
     def remover(self, valor):
         if self.head == None: #lista vazia
-            return "Lista está vazia ,não há o que remover!"
+            print("Lista está vazia ,não há o que remover!")
+            return
         
-        if self.head.valor == valor: #valor está no primeiro nó da lista
+        elif self.head.valor == valor: #valor está no primeiro nó da lista
             self.head = self.head.next #tornamos o próximo elemento a cabeça, o resto não muda nada!
             return
         
@@ -50,7 +51,7 @@ class LinkedList:
             previous_node = current_node
             current_node = current_node.next
         
-        return "Valor não encontrado na lista"
+        print("Valor não encontrado na lista")
     
 class Deque:
     
@@ -83,14 +84,16 @@ class Deque:
         elif self.head.next is None: #nesse caso, a lista tem apenas um nó
             self.head = None
             self.tail = None
+            print("elemento inicial removido!")
         
         else:
             self.head = self.head.next
+            print("elemento inicial removido!")
     
     def inserir_final(self, valor):
+        novo_No = Node(valor)
         
         if self.tail is None:
-            novo_No = Node(valor)
             self.head = novo_No
             self.tail = novo_No
         
@@ -107,10 +110,8 @@ class Deque:
         else:
             current = self.head
             
-            while current.next is not self.tail: #percorre a lista até o penúltimo elemento
+            while current.next is not None: #percorre a lista até o penúltimo elemento
                 current = current.next
             
             current.next = None
             print("último elemento removido!")
-            
-        
