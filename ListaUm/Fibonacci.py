@@ -22,7 +22,6 @@ def fibonacciIterativo(numero):
     
     return num_fibonacci
 
-
 numero = 10
 
 # Medindo o tempo de execução da função recursiva
