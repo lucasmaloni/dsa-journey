@@ -62,7 +62,8 @@ class Deque:
             print(current.content, end=" -> ")
             current = current.next
         print("None")
-            
+
+#Testes
 deque = Deque()
 
 deque.removeLeft()

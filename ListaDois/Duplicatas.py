@@ -12,10 +12,13 @@ def removeDups(list):
     while currentNode is not None:
         
         if currentNode.content not in validSet:
+            #adicionamos o valor atual ao set
             validSet.add(currentNode.content)
+            #continuamos a percorrer a lista
             previousNode = currentNode
             currentNode = currentNode.next
         else:
+            #valor for duplicado, realocamos os ponteiros para não apontar mais para valores duplicados
             previousNode.next = currentNode.next
             currentNode = currentNode.next
     
