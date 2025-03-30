@@ -17,7 +17,6 @@ class Deque:
         else:        
             newNode.next = self.head
             self.head = newNode
-            self.head.next = newNode.next
     
     def addRight(self, content):
         newNode = Node(content)
@@ -56,6 +55,13 @@ class Deque:
             
             self.tail = currentNode
             self.tail.next = None
+    
+    def display(self):
+        current = self.head
+        while current:
+            print(current.content, end=" -> ")
+            current = current.next
+        print("None")
             
 deque = Deque()
 
