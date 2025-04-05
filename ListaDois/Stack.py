@@ -41,19 +41,3 @@ class Stack:
     
     def size(self): #retorna o tamanho da pilha contando todos os elementos que não forem None (fim da fila)
         return self._size
-
-# Exemplo de uso:
-pilha = Stack()
-
-# Adicionando elementos
-pilha.push(10)
-pilha.push(20)
-pilha.push(30)
-
-print(f"Topo da pilha: {pilha.peek()}")  # Exibe o topo da pilha
-print(f"Tamanho da pilha: {pilha.size()}")  # Exibe o tamanho da pilha
-
-# Removendo elementos
-print(f"Elemento removido: {pilha.pop()}")  # Remove o topo
-print(f"Novo tamanho da pilha: {pilha.size()}") #Mostra novo tamanho da pilha
-print(f"Topo da pilha após remoção: {pilha.peek()}") #Mostra novo topo da pilha
