@@ -58,10 +58,12 @@ class Deque:
     
     def display(self):
         current = self.head
+        elementos = []
         while current:
-            print(current.content, end=" -> ")
+            elementos.append(current.valor)
             current = current.next
-        print("None")
+        return elementos
+            
 
 #Testes
 deque = Deque()
