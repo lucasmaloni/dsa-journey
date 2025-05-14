@@ -1,4 +1,4 @@
-from ListaCircular import LinkedListCircular
+from dataStructuresImplemented.CircularLinkedList import LinkedListCircular
 
 def mesclar(lista1, lista2):
     # Criar uma nova lista circular que será a lista mesclada

@@ -5,7 +5,7 @@ class Node:
         self.age = age
         self.next = None
 
-class CicrularLinkedList:
+class CircularLinkedList:
     
     def __init__(self):
         self.head = None
@@ -75,7 +75,7 @@ class CicrularLinkedList:
                 break
     
 #teste
-lista = CicrularLinkedList()
+lista = CircularLinkedList()
 
 # Saídas esperadas: "Lista continua circular!"
 lista.add("João", 25)

@@ -1,26 +1,25 @@
 class Stack:
-    def __init__(self): # Construtor da classe e inicializador de Array
-        self.itens = []
+    def __init__(self):  # Class constructor and array initializer
+        self.items = []
 
-    def push(self, item): #adição de novo elemento
-        self.itens.append(item)
-        print("Item adicionado!\n")
+    def push(self, item):  # Add new element
+        self.items.append(item)
+        print("Item added!\n")
     
-    def pop(self): #remoção de último elemento
-        if len(self.itens)==0:
-            print("Pilha vazia, impossível remover elemento.\n") 
+    def pop(self):  # Remove last element
+        if len(self.items) == 0:
+            print("Empty stack, cannot remove element.\n")  # <-- mensagem ainda em português no original
         else:
-            self.itens.pop()
+            self.items.pop()
 
-    def peek(self): #mostrando ultimo elemento para usuário
+    def peek(self):  # Show last element to user
         if self.is_empty():
-            print("Pilha sem elementos, não há o que apresentar.\n")
+            print("Stack is empty, nothing to show.\n")  # <-- mensagem ainda em português no original
         else:
-            print(self.itens[-1])
+            print(self.items[-1])
     
-    def is_empty(self): #retorna booleao se está ou não vazio
+    def is_empty(self):  # Returns boolean if stack is empty
         return self.size() == 0
 
-    def size(self): #tamanho da pilha
-        return len(self.itens)
-
+    def size(self):  # Stack size
+        return len(self.items)
