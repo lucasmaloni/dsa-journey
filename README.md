@@ -32,4 +32,4 @@ Clone o repositório:
 
 ```bash
 git clone https://github.com/lucasmaloni/studious-robot.git
-cd estrutura-de-dados
+cd studious-robot
