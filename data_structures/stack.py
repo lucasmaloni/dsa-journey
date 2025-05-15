@@ -9,22 +9,22 @@ class Stack:
         self.top = None
         self._size = 0
     
-    def isEmpty(self): #retorna booleano para sabermos se a pilha é vazia
+    def is_empty(self): #retorna booleano para sabermos se a pilha é vazia
         return self.top is None
 
     def push(self, value): #método de adição de elementos
-        newElement = Node(value)
+        new_element = Node(value)
         
-        if self.isEmpty():
-            self.top = newElement
+        if self.is_empty():
+            self.top = new_element
         else:
-            newElement.next = self.top #adição de elementos realoca referências
-            self.top = newElement
+            new_element.next = self.top #adição de elementos realoca referências
+            self.top = new_element
         self._size += 1
     
     def pop(self): #método de remoção do elemento do topo da pilha
         
-        if self.isEmpty():
+        if self.is_empty():
             return None
         else:
             popped_element = self.top
@@ -34,10 +34,10 @@ class Stack:
         
     def peek(self): #método para checarmos o primeiro elemento da pilha
         
-        if self.isEmpty():
+        if self.is_empty():
             return None
         else:
             return self.top.value
     
-    def size(self): #retorna o tamanho da pilha contando todos os elementos que não forem None (fim da fila)
+    def _size(self): #retorna o tamanho da pilha contando todos os elementos que não forem None (fim da fila)
         return self._size
