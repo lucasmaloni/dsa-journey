@@ -4,7 +4,6 @@ class Node:
         self.age = age
         self.next = None
 
-
 class CircularLinkedList:
     def __init__(self):
         self.head = None

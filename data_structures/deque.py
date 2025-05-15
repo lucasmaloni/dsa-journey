@@ -61,7 +61,6 @@ class Deque:
             elements.append(current.value)
             current = current.next
         return elements
-            
 
 # Tests
 deque = Deque()
