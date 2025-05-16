@@ -33,7 +33,23 @@ class DoublyLinkedList:
             return
 
         else:
+            removed_element = self.head.value
             self.head = self.head.next
             self.head.prev = None
+            return removed_element
     
-    
+    def display(self):
+        #print all the values of the list
+        elements = []
+        
+        if self.is_empty():
+            return elements
+        
+        else:
+            current = self.head
+            
+            while current is not None:
+                elements.append(current.value)
+                current = current.next
+            
+            return elements
