@@ -53,3 +53,23 @@ class DoublyLinkedList:
                 current = current.next
             
             return elements
+        
+#testing
+
+dllist = DoublyLinkedList()
+
+dllist.add(1)
+dllist.add(2)
+dllist.add(3)
+dllist.add(4)
+dllist.add(5)
+
+#[1, 2, 3, 4, 5]
+print(dllist.display())
+
+print(dllist.remove())  #1
+print(dllist.remove())  #2
+print(dllist.remove())  #3
+
+#[4, 5]
+print(dllist.display())

@@ -17,7 +17,7 @@ Repositório com implementações das principais estruturas de dados, algoritmos
 - [x] Queue (Fila)
 - [x] Deque (Fila Dupla)
 - [x] Circular Linked List (Lista Circular)
-- [ ] Doubly Linked List (Lista Duplamente Encadeada)
+- [x] Doubly Linked List (Lista Duplamente Encadeada)
 - [ ] Binary Tree (Árvore Binária)
 - [ ] Hash Table (Tabela Hash)
 
