@@ -5,10 +5,13 @@ Repositório com implementações das principais estruturas de dados, algoritmos
 ## 📌 Objetivos
 
 - Praticar a implementação de estruturas clássicas.
+- Praticar algoritmos recursivos.
+- Praticar otimização de algoritmos.
+- Praticar algoritmos de ordenação.
 - Reforçar conceitos como listas encadeadas, pilhas, filas e recursão.
 - Usar padrões de nomenclatura e estilo recomendados em Python (PEP8).
 - Compartilhar conhecimento com a comunidade.
-- Arquivar biblioteca para uso em projetos futuros e consultas futuras
+- Arquivar biblioteca para uso em projetos futuros e consultas futuras.
 - Repositório ainda sendo atualizado em 15/05.
 
 ## 📁 Estruturas Implementadas
@@ -30,6 +33,5 @@ Repositório com implementações das principais estruturas de dados, algoritmos
 
 Clone o repositório:
 
-```bash
-git clone https://github.com/lucasmaloni/studious-robot.git
-cd studious-robot
+git clone https://github.com/lucasmaloni/dsa-journey.git
+cd dsa-journey
